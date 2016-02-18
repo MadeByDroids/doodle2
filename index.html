@@ -6,15 +6,14 @@
 <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="doodle.css">
-<link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href=" https://cdn.rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css">
+<link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
-
-
-<div class="video-area">
+    <div id="why-doodle">
+        <div class="video-area">
   <div class="cover">
     <div class="texture"></div>
     <div class="d-logo">
@@ -56,35 +55,37 @@
   <source src="video/doodlathon.webm" type="video/webm">
 </video>
 </div>
-<div id="why-doodle">
-<div class="page">
+</div>
+
+<div id="fullpage">
+
+<div class="page section">
 <h2>What is this 'doodle'?</h2>
 <p>According to wikipdia a doodle is: a drawing made while a person's attention is otherwise occupied. Doodles are simple drawings that can have concrete representational meaning or may just be abstract shapes.</p>
 </div>
-<div class="page">
+<div class="page section">
 <h2>So why should I doodle?</h2>
 <p>Doodling has many benefits, some of the more scientific are that doodling strengthens fine motor skills, it encourages learning, the recall of information and creative thinking. It also helps to build neural connections in your brain. But aside form all of that sience babble - its relaxing and great fun!</p>
 </div>
-<div class="page">
+<div class="page section">
 <h2>Its 100% free!</h2>
 <p>Yes - you read that right! Well, you'll need to procure some kind of implement to make marks onto some kind of surface but there are no subscriptions, no yearly plans, no special training courses needed, no data-band-width limits! Plus it can be done anywhere, any time, by anyone - now grab a pen and something to doodle on!</p>
 </div>
-<div class="page">
+<div class="page section">
 <h2>But to doodle I need to be an artist / creative right?</h2>
 <p>That's totally true... so good job you are then! That's right - you already are creative; all humanoids are born this way, you just may not of realised it yet. The power of the doodle resides inside us all, you just have to release it.</p>
 </div>
-<!--<p>Cool ddole story interlude - I once worked with the CEO of a Software company who was also the technical director, a very mathematical and precise person who never drew in his life. He was adamant he was not creative. i convinced him to doodle as a means of brainstorming for new ideas as well as trying to relax between his very busy schedule. He started doodling some amazing geometric patterns while on phone calls; to the point where he began enjoying it in his little breaks away from his busy schedule. After a month or so he had collated a number of doodles that he treasured. As both an accomplishment of something he thought he could'nt do and also as notes to himself of great ideas (and doodles). Everyone can get something from doodling.</p> !-->
-<div class="page">
+<div class="page section">
 <h2>What can I do with my doodle</h2>
 <p>Whatever you like! Keep it, frame it, give it to somebody, have it analyzed by a clever person with a phd after their name to tell you something about yourself. Its yours. You did it! </p>
 </div>
-<div class="page">
+<div class="page section">
 <h2>Get involved!</h2>
 <p>Spread the doodle love and lets get the whole world doodling in one huge doodlathon! (that's like a marathon, or triatholon, but for doodlers)</p>
 </div>
+<div class="page section fp-auto-height">
 <h2>Some famous doodles</h2>
 
-</div>
 <!-- Modal -->
 <div id="modalPicture" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalPictureLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -124,18 +125,21 @@
 </div>
 <!-- .end modal -->
 <div id="container">
-
-
 </div>
 
 <p><button id="load-images">Load images</button></p>
 
-
+</div>
+    </div>
+        
 <script src="https://code.jquery.com/jquery-2.1.3.min.js" ></script>
+<script src="js/vendor/jquery.easings.min.js"></script>
+<script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
+<script src="https://cdn.rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.min.js"></script>  
 <script src="http://masonry.desandro.com/masonry.pkgd.js" ></script>
 <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
-        <script defer src="js/vendor/jquery.flexverticalcenter.js"></script>        
+ 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 <script type="text/javascript">
@@ -201,7 +205,55 @@ $(document).on("click", ".js-button", function() {
   });
 
 
+
 </script>
+    <script>
+    $(document).ready(function() {
+    $('#fullpage').fullpage({
+        //Navigation
+
+
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
+
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Design
+        controlArrows: true,
+        verticalCentered: true,
+        resize : false,
+        sectionsColor : ['#ccc', '#fff'],
+
+        fixedElements: '#header, .footer',
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+
+    });
+});
+    </script>
 
 </body>
 </html>
