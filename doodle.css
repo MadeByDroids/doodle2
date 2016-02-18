@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body {-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
+
+body { text-align:center; margin:0 auto; padding:0 0 0 0;}
+.d-logo {width:200px; height:250px; margin:0 auto;}
+h1 {font-family: 'Fredericka the Great', cursive;font-size:8em; margin:0 0 0 0; padding:0 0 0 0; color:#fff; vertical-align:middle; line-height:100px; -webkit-font-smoothing: antialiased; font-weight:normal;}
+h2 {font-family: arial; font-size:1em; margin:20px 0 0 0; padding:0 0 0 0; color:#fff; vertical-align:middle; font-weight:normal;}
+.video-area {position:relative;width:100%; height:650px; overflow:hidden; background:transparent;
+
+}
+
+video { 
+position:absolute;
+  display:block;
+  right: 0;
+  left:0;
+  top: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height:auto;
+  z-index: -100;
+ background: url('') no-repeat top center;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+div.cover {width:100%; height:650px; min-height:650px; background-color: rgba(0, 0, 0, 0.7);
+background: rgba(0, 0, 0, 0.7);
+color: rgba(0, 0, 0, 0.7);
+}
+div.texture { width:100%; height:100%;
+position:absolute; z-index:0;
+}
+div.texture::after {
+  content: "";
+  background: url("http://www.transparenttextures.com/patterns/subtle-grunge.png") top left repeat;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+/* MASONRY */
+#container {
+  background: #fff;
+  width:1000px;
+  margin:0 auto;
+}
+
+.item {
+  width: 250px;
+  float: left;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+}
+
+button { font-size: 18px; } 
+
+.btn {position:absolute;}
+
+button.close {width:100px; height:30px; background-color:#333;}
+	img.js-modal-image {width:100% !important;}
+#load-images {margin-top:100px;}
+
+#why-doodle {width:70%; margin:0 auto;}
+#why-doodle h1, #why-doodle h2 {
+	font-family: 'Fredericka the Great', cursive;font-size:4em; margin:0px 0 0 0; padding:1.5em 0 0 0; color:#333; vertical-align:middle; font-weight:normal; line-height:normal;
+	}
+	#why-doodle p {font-size:1.3em; font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif; line-height:1.8em;}
