@@ -5,6 +5,35 @@ html, body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: graysc
 body { text-align:center; margin:0 auto; padding:0 0 0 0;}
 .d-logo {width:300px; margin:0 auto;}
 .video-area {position:relative;width:100%; height:750px; overflow:hidden; background:transparent;}
+.loader {
+	width:100px; height:100px;
+  display: inline-block;
+  position: relative;
+  top: 40%;
+  animation: loader 2s infinite ease;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+div#preloader { position: fixed; left: 0; top: 0; z-index: 20000; width: 100%; height: 100%; overflow: visible; background-color:#333333; }
 
 video#bgvid { 
     position: fixed;
