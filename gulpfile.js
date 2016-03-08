@@ -68,19 +68,12 @@ gulp.task('styles', function() {
 
 // default gulp task
 // default gulp task
-gulp.task('default', ['imagemin', 'htmlpage', 'scripts', 'styles'], function() {
+// default gulp task
+gulp.task("default", ["imagemin", "htmlpage", "scripts", "styles"], function() {
   // watch for HTML changes
-  gulp.watch('./src/*.html', function() {
-    gulp.run('htmlpage');
-  });
-
+  gulp.watch('./src/*.html', ["htmlpage"]);
   // watch for JS changes
-  gulp.watch('./src/scripts/*.js', function() {
-    gulp.run('jshint', 'scripts');
-  });
-
+  gulp.watch('./src/scripts/*.js', ["jshint", "scripts"]);
   // watch for CSS changes
-  gulp.watch('./src/styles/*.css', function() {
-    gulp.run('styles');
-  });
+  gulp.watch('./src/styles/*.css', ["styles"]);
 });

@@ -1,0 +1,19 @@
+{
+  "name": "doodlebox",
+  "version": "1.0.0",
+  "description": "Doodle website, experimenting with sass, git, gulp etc",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MadeByDroids/doodlebox.git"
+  },
+  "author": "Andy Fiddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadeByDroids/doodlebox/issues"
+  },
+  "homepage": "https://github.com/MadeByDroids/doodlebox"
+}
