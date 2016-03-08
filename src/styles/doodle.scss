@@ -1,5 +1,5 @@
 // vars
-$theme-one: #333333;
+$theme-one: #999999;
 $title-font-stack: 'Fredericka the Great', cursive;
 
 @charset "UTF-8";
@@ -20,26 +20,26 @@ body { text-align:center; margin:0 auto; padding:0 0 0 0;}
   0% {
     transform: rotate(0deg);
   }
-  
+
   25% {
     transform: rotate(180deg);
   }
-  
+
   50% {
     transform: rotate(180deg);
   }
-  
+
   75% {
     transform: rotate(360deg);
   }
-  
+
   100% {
     transform: rotate(360deg);
   }
 }
 div#preloader { position: fixed; left: 0; top: 0; z-index: 20000; width: 100%; height: 100%; overflow: visible; background-color:$theme-one; }
 
-video#bgvid { 
+video#bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -53,7 +53,7 @@ video#bgvid {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     /*background: url(polina.jpg) no-repeat;*/
-    background-size: cover; 
+    background-size: cover;
 }
 
 div.cover {
@@ -94,7 +94,7 @@ h2.subtitle {font-family: arial; font-size:1em; margin:20px 0 0 0; padding:0 0 0
   width: 100%;
 }
 
-button { font-size: 18px; } 
+button { font-size: 18px; }
 
 .btn {position:absolute;}
 
