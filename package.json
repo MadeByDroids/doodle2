@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MadeByDroids/doodlebox/issues"
   },
-  "homepage": "https://github.com/MadeByDroids/doodlebox"
+  "homepage": "https://github.com/MadeByDroids/doodlebox",
+  "devDependencies": {
+    "browser-sync": "^2.11.1"
+  }
 }
