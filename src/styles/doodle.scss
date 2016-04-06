@@ -76,6 +76,16 @@ h2.subtitle {font-family: arial; font-size:1em; margin:20px 0 0 0; padding:0 0 0
 
 .white {background-color: white}
 .grey {background-color: #e3e3e3 !important;}
+#dd-1, #dd-2 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#dd-1 {background: #fff url("../img/bg-a.jpg") no-repeat center center fixed; }
+#dd-2 {background: #e3e3e3 url("../img/bg-2.jpg") no-repeat center center fixed; }
+
 
 /* MASONRY */
 #doodle-stream {min-height:800px; padding-top: 2em;}
