@@ -75,5 +75,5 @@ gulp.task("default", ["imagemin", "htmlpage", "scripts", "styles"], function() {
   // watch for JS changes
   gulp.watch('./src/scripts/*.js', ["jshint", "scripts"]);
   // watch for CSS changes
-  gulp.watch('./src/styles/*.css', ["styles"]);
+  gulp.watch('./src/styles/*.scss', ["styles"]);
 });
