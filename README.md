@@ -1,1 +1,1 @@
-# doodle - just mucking around with GIT, updating files etc
+# doodle - Learning a bunch of stuff; npm, gulp, git, sass etc, while building my lovely doodlathon website idea
